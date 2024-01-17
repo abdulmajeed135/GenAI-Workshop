@@ -1,11 +1,9 @@
-# importing the Dataset
 
 import pandas as pd
 
 messages = pd.read_csv('SMSSpamCollection', sep='\t',
                            names=["label", "message"])
 
-#Data cleaning and preprocessing
 import re
 import nltk
 nltk.download('stopwords')
